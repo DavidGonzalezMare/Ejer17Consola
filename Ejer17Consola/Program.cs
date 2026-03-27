@@ -196,6 +196,8 @@
             CambiarFechaDiaSiguienteVersion2(ref dia, ref mes, ref anyo);
 
             Console.WriteLine($"\nFecha del día siguiente: {dia:D2}/{mes:D2}/{anyo:D4}.\n");
+
+            Console.WriteLine("Esta linea es solo para probar el push");
            
         }
     }
