@@ -24,3 +24,8 @@ jobs:
 
     - name: Compilar solución
       run: dotnet build --configuration Release --no-restore
+
+    - name: Ejecutar programa con entrada automática
+      run: |
+        printf "28\n2\n2024\n" | dotnet run --project Ejer17Consola/Ejer17Consola.csproj
+
