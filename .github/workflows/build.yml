@@ -29,19 +29,19 @@ jobs:
       run: |
         printf "28\n2\n2024\n" | dotnet run --project Ejer17Consola/Ejer17Consola.csproj
   
-    - name: Ejecutar programa (caso 1: 28/02/2024 → 29/02/2024)
+    - name: Ejecutar programa caso 1: 28/02/2024 → 29/02/2024
       run: |
         printf "28\n2\n2024\n" | dotnet run --project Ejer17Consola/Ejer17Consola.csproj
 
-    - name: Ejecutar programa (caso 2: 29/02/2024 → 01/03/2024)
+    - name: Ejecutar programa caso 2: 29/02/2024 → 01/03/2024
       run: |
         printf "29\n2\n2024\n" | dotnet run --project Ejer17Consola/Ejer17Consola.csproj
 
-    - name: Ejecutar programa (caso 3: 31/12/2024 → 01/01/2025)
+    - name: Ejecutar programa caso 3: 31/12/2024 → 01/01/2025
       run: |
         printf "31\n12\n2024\n" | dotnet run --project Ejer17Consola/Ejer17Consola.csproj
 
-    - name: Ejecutar programa (caso 4: 30/04/2024 → 01/05/2024)
+    - name: Ejecutar programa caso 4: 30/04/2024 → 01/05/2024
       run: |
         printf "30\n4\n2024\n" | dotnet run --project Ejer17Consola/Ejer17Consola.csproj
 
