@@ -1,0 +1,26 @@
+name: Compilar proyecto C# (.NET 8)
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del código
+      uses: actions/checkout@v4
+
+    - name: Instalar .NET 8
+      uses: actions/setup-dotnet@v5
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restaurar dependencias
+      run: dotnet restore
+
+    - name: Compilar solución
+      run: dotnet build --configuration Release --no-restore
