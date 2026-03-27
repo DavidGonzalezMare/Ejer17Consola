@@ -29,11 +29,11 @@ jobs:
       run: |
         printf "28\n2\n2024\n" | dotnet run --project Ejer17Consola/Ejer17Consola.csproj
   
-    - name: Ejecutar programa caso 1: 28/02/2024 → 29/02/2024
+    - name: Ejecutar programa con entrada automática
       run: |
         printf "28\n2\n2024\n" | dotnet run --project Ejer17Consola/Ejer17Consola.csproj
 
-    - name: Ejecutar programa caso 2: 29/02/2024 → 01/03/2024
+    - name: Ejecutar programa con entrada automática
       run: |
         printf "29\n2\n2024\n" | dotnet run --project Ejer17Consola/Ejer17Consola.csproj
 
